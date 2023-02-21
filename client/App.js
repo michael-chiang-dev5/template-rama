@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <h1>Hello sdfasdf</h1>
+      <h1>Websocket template</h1>
       <button
         onClick={() => {
           axios({
