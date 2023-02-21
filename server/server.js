@@ -27,8 +27,16 @@ app.get('/', (req, res) => {
     .sendFile(path.resolve(__dirname, '../client/index.html'));
 });
 
+let mySocket;
 io.on('connection', (socket) => {
   console.log('client connected');
+  mySocket = socket;
+});
+
+app.get('/test', (req, res) => {
+  console.log('http get request received on backend');
+  mySocket.emit('serverEvent', 999);
+  res.status(200).json({});
 });
 
 // start server
