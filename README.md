@@ -12,4 +12,4 @@ Access on the browser: `http://localhost:8080/`
 
 # For students
 
-- Install the following npm packages: `typescript`, `ts-loader`
+Read `https://blog.logrocket.com/using-webpack-typescript/` for more information on how to set up a typescript build from scratch
