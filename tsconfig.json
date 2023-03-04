@@ -1,8 +1,15 @@
 {
     "compilerOptions": {
+        "outDir": "./dist/",
         "noImplicitAny": true,
-        "target": "ES5",
         "module": "ES2015",
+        "target": "ES5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
         "sourceMap": true
-    }
+    },
+    "include": ["client/*.ts", "client/*.tsx"],
+    "exclude": ["node_modules"]
 }
