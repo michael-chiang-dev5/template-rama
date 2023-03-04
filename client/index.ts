@@ -1,6 +1,7 @@
 import { subtract } from './app';
-
+import styles from './index.module.css';
 function init() {
+  console.log(styles);
   const form = document.querySelector('form');
   form?.addEventListener('submit', submitHandler);
 }

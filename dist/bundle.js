@@ -1,0 +1,1 @@
+(()=>{"use strict";var e;null==(e=document.querySelector("form"))||e.addEventListener("submit",(function(e){e.preventDefault();var t=document.querySelector("input[name='firstnumber']"),u=document.querySelector("input[name='secondnumber']"),n=Number(t.value)-Number(u.value),r=document.querySelector("p");r&&(r.textContent=n.toString())}))})();

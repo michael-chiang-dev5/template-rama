@@ -1,0 +1,20 @@
+form {
+    background-color:pink;
+    margin-top:100px;
+    border-radius:40px;
+}
+.cal{
+    width:550px;
+    height:300px;
+    margin-left:400px;
+}
+
+.button{
+    border-radius:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.input{
+    border-radius:10px;
+    margin-top:40px;
+}
