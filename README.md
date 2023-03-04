@@ -8,7 +8,7 @@ This is a minimal template for integrating typescript with webpack and react.
 
 `npm run dev`
 
-Access on the browser: `http://localhost:8080/`
+Access on the browser: `http://localhost:3000/`
 
 # For students
 
