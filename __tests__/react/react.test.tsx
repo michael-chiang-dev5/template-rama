@@ -5,6 +5,7 @@ import App from '../../client/App';
 
 describe('App component', () => {
   it('has text', () => {
-    const app = render(<App />);
+    render(<App />);
+    expect(screen.getByText('Hello World!')).toBeInTheDocument();
   });
 });
