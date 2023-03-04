@@ -22,6 +22,7 @@ module.exports = {
       },
     ],
   },
+  devtool: 'source-map', // this is required to generate source maps, which let you debug with un-minimifed files in the browser
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
