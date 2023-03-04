@@ -1,6 +1,6 @@
 # Description
 
-This is a minimal template for integrating typescript with webpack and react.
+This is a minimal template for integrating unit/integration/e2e tests with typescript/react/express
 
 # Instructions
 
@@ -11,5 +11,3 @@ This is a minimal template for integrating typescript with webpack and react.
 Access on the browser: `http://localhost:3000/`
 
 # For students
-
-Read `https://blog.logrocket.com/using-webpack-typescript/` for more information on how to set up a typescript build from scratch
