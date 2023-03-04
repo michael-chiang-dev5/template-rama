@@ -1,14 +1,17 @@
 # Description
 
-This is a minimal template for connecting the frontend with backend. This github also contains minimal templates for:
+This repo contains minimal templates for:
 
+- connecting a react frontend to an express backend (see branch `frontend-backend`)
 - websockets (see branch `websockets`)
+- typescript (see branch `typescript`)
 - More to come!
 
 # Instructions
 
 `npm install`
-
 `npm run dev`
 
-Access on the browser: `http://localhost:8080/`
+# For students
+
+You may find the following resources helpful:
