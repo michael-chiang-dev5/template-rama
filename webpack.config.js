@@ -47,7 +47,7 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, 'dist'),
     compress: true,
-    port: 4000,
+    port: 8080,
   },
   optimization: {
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
