@@ -5,6 +5,8 @@
   "main": "client/index.ts",
   "scripts": {
     "dev": "NODE_ENV=development nodemon ./server/server.ts & NODE_ENV=development webpack serve",
+    "frontend": "NODE_ENV=development webpack serve",
+    "backend": "NODE_ENV=development nodemon --delay 500ms ./server/server.ts",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +29,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.5"
   }
 }
