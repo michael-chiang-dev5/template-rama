@@ -14,12 +14,6 @@
   "keywords": [],
   "author": "Michael Chiang",
   "license": "ISC",
-  "jest": {
-    "testEnvironment": "jest-environment-jsdom",
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-dom/extend-expect"
-    ]
-  },
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
