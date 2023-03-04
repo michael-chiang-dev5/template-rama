@@ -47,7 +47,11 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, 'dist'),
     compress: true,
-    port: 8080,
+    port: 3000,
+    proxy: {
+      '/api': 'http://localhost:8080',
+      secure: false,
+    },
   },
   optimization: {
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
