@@ -9,7 +9,7 @@
     "backend": "NODE_ENV=development nodemon ./server/server.ts",
     "build": "webpack --mode production",
     "test": "jest --verbose",
-    "test:e2e": "npx playwright test"
+    "test:e2e": "npx playwright test --project='chromium'; npx playwright show-report"
   },
   "keywords": [],
   "author": "Michael Chiang",
