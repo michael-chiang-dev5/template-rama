@@ -1,5 +1,8 @@
-Create docker image with
+Create docker image from default Dockerfile with:
 `docker build -t codecollab-prod .`
+
+Create docker image from given Dockerfile with:
+`docker build -t [orgname]/mm-dev -f Dockerfile-dev .`
 
 Run docker container with:
 `docker run -p 8090:8080 codecollab-prod`
