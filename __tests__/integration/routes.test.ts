@@ -1,10 +1,10 @@
-const request = require('supertest');
-const { appCreator } = require('../../server/appCreator');
+import request from 'supertest';
+import { appCreator } from '../../src/server/appCreator';
 
 describe('Auth endpoints', () => {
   let app;
   beforeEach(() => {
-    app = appCreator({});
+    app = appCreator();
   });
   afterEach(() => {});
   it('GET "/api" response is 200', async () => {

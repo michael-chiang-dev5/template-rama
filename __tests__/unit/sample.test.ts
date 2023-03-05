@@ -1,4 +1,4 @@
-import { addOne } from '../../client/sample';
+import { addOne } from '../../src/client/sample';
 
 describe('sample test', () => {
   beforeAll(() => {});

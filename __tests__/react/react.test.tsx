@@ -1,7 +1,7 @@
 import React from 'react';
 import { cleanup, render, screen, waitFor } from '@testing-library/react';
 
-import App from '../../client/App';
+import App from '../../src/client/App';
 
 describe('App component', () => {
   it('has text', () => {
