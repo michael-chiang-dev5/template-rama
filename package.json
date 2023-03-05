@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/client/index.ts",
   "scripts": {
+    "start": "NODE_ENV=production nodemon ./src/server/server.ts",
     "dev": "NODE_ENV=development nodemon ./src/server/server.ts & NODE_ENV=development webpack serve",
     "build": "webpack --mode production",
     "test": "jest --verbose",
