@@ -2,9 +2,9 @@
   "name": "webpack-setup",
   "version": "1.0.0",
   "description": "",
-  "main": "client/index.ts",
+  "main": "src/client/index.ts",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon ./server/server.ts & NODE_ENV=development webpack serve",
+    "dev": "NODE_ENV=development nodemon ./src/server/server.ts & NODE_ENV=development webpack serve",
     "frontend": "NODE_ENV=development webpack serve",
     "backend": "NODE_ENV=development nodemon ./server/server.ts",
     "build": "webpack --mode production",

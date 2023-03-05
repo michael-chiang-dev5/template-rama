@@ -8,7 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './client/index.tsx',
+  entry: './src/client/index.tsx',
   module: {
     rules: [
       {
@@ -34,13 +34,13 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'our project', // Load a custom template (lodash by default)
-      template: 'client/index.html',
+      template: 'src/client/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
     }),
     new CopyPlugin({
-      patterns: [{ from: 'client/assets', to: 'assets' }],
+      patterns: [{ from: 'src/client/assets', to: 'assets' }],
     }),
   ],
 
