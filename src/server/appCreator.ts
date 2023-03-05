@@ -5,6 +5,8 @@ import express, {
   RequestHandler,
 } from 'express';
 import path from 'path';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const appCreator = function () {
   const app = express();
@@ -23,6 +25,7 @@ export const appCreator = function () {
   });
 
   app.get('/api', (req: Request, res: Response) => {
+    console.log(process.env.PG_URI);
     return res.status(200).json({ a: 'b' });
   });
 

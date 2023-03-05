@@ -4,3 +4,4 @@ dist
 /playwright-report/
 /playwright/.cache/
 *.zip
+.env
