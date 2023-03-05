@@ -7,6 +7,7 @@ import express, {
 import path from 'path';
 import dotenv from 'dotenv';
 dotenv.config();
+import { db } from './db/dbPostgreSQL';
 
 export const appCreator = function () {
   const app = express();
@@ -24,11 +25,10 @@ export const appCreator = function () {
       .sendFile(path.resolve(__dirname, '../dist/index.html'));
   });
 
-  app.get('/api', (req: Request, res: Response) => {
-    console.log(process.env.PG_URI);
-    return res.status(200).json({ a: 'b' });
+  app.get('/api', async (req: Request, res: Response) => {
+    const asdf = await db.getTables();
+    return res.status(200).json({ a: asdf });
   });
-
   return app;
 };
 

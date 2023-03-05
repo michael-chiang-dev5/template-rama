@@ -4,7 +4,6 @@ const PORT = 8080;
 // const dbPostgreSQL = require('../db/dbPostgreSQL.js');
 
 // start server
-// const app = appCreator(dbPostgreSQL);
 const app = appCreator();
 
 app.listen(PORT, () => {
