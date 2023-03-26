@@ -1,7 +1,13 @@
 import React from 'react';
+import Vtube from './Vtube';
 
 function App() {
-  return <h1>Hello sdfasdf</h1>;
+  return (
+    <>
+      <h1>V-tube</h1>
+      <Vtube />
+    </>
+  );
 }
 
 export default App;
