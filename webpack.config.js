@@ -15,13 +15,23 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js',
   },
+  // configuration options for webpack-dev-server, which provides hot reloading
+  // Here, devServer is on port 3000
+  //   api calls are proxied to backend on port 8080
   devServer: {
-    proxy: {
-      '/api': 'http://localhost:3000',
-      '/build': 'http://localhost:3000',
-    },
+    static: path.join(__dirname, 'dist'),
     compress: true,
-    port: 8080,
+    port: 3000,
+    proxy: {
+      '/api': 'http://localhost:8080',
+      '/auth': 'http://localhost:8080',
+      secure: false,
+    },
+    // historyApiFallback for refresh on react router route
+    // https://ui.dev/react-router-cannot-get-url-refresh
+    // devServer only serves on :3000/. When you access a route localhost:3000/my/route, dev server
+    //   normally does not know how to resolve. historyApiFallback makes it so that dev server serves
+    //   bundle, then redirects to /my/route
     historyApiFallback: true,
   },
   module: {

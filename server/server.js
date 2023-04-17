@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const PORT = 8090;
+const PORT = 8080;
 
 // serve index.html
 app.get('/', (req, res) => {
